@@ -20,6 +20,14 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_StateManagement_RecoveryAction{
+   public:
+/*
+      virtual void Offer                    (void) = 0;
+      virtual void StopOffer                (void) = 0;
+*/
+      virtual void Callback_RecoveryHandler (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

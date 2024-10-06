@@ -20,6 +20,14 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_StateManagement_EcuResetRequest{
+   public:
+      virtual void EnableRapidShutdown (void) = 0;
+      virtual void ExecuteReset        (void) = 0;
+      virtual void Offer               (void) = 0;
+      virtual void RequestReset        (void) = 0;
+      virtual void StopOffer           (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

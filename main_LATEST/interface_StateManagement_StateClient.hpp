@@ -20,6 +20,16 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef unsigned char Future;
+typedef unsigned char FunctionGroupState;
+
+class interface_StateManagement_StateClient{
+   public:
+      virtual void   Create                                 (void /*function*/)                          = 0;
+      virtual void   GetExecutionError                      (void)                                       = 0;
+      virtual void   GetInitialMachineStateTransitionResult (void)                                       = 0;
+      virtual Future SetState                               (FunctionGroupState ValueFunctionGroupState) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

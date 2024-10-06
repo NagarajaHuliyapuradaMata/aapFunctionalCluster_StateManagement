@@ -20,6 +20,15 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+class interface_StateManagement_UpdateRequest{
+   public:
+      virtual void PrepareRollback      (void) = 0;
+      virtual void PrepareUpdate        (void) = 0;
+      virtual void RequestUpdateSession (void) = 0;
+      virtual void ResetMachine         (void) = 0;
+      virtual void StopUpdateSession    (void) = 0;
+      virtual void VerifyUpdate         (void) = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */

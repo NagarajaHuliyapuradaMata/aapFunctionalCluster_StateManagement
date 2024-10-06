@@ -20,6 +20,14 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
+typedef unsigned char PowerModeRespMsg;
+typedef unsigned char PowerModeMsg;
+
+class interface_StateManagement_PowerMode{
+   public:
+      virtual void event   (PowerModeRespMsg* ptrPowerModeRespMsg) = 0;
+      virtual void message (PowerModeMsg*     ptrPowerModeMsg)     = 0;
+};
 
 /******************************************************************************/
 /* CONSTS                                                                     */
