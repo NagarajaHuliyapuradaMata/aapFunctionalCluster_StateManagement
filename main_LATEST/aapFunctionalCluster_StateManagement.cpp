@@ -7,6 +7,8 @@
 /******************************************************************************/
 /* #INCLUDES                                                                  */
 /******************************************************************************/
+#include "TypesStd.hpp"
+
 #include "interface_StateManagement_StateClient.hpp"
 #include "interface_StateManagement_StateMachineService.hpp"
 #include "interface_StateManagement_UpdateAllowedService.hpp"
@@ -22,7 +24,6 @@
 /******************************************************************************/
 /* MACROS                                                                     */
 /******************************************************************************/
-#define UNUSED(x)                                                        (x = x)
 
 /******************************************************************************/
 /* TYPEDEFS                                                                   */

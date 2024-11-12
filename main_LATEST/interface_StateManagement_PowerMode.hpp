@@ -20,8 +20,8 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef unsigned char PowerModeRespMsg;
-typedef unsigned char PowerModeMsg;
+typedef uint8 PowerModeRespMsg;
+typedef uint8 PowerModeMsg;
 
 class interface_StateManagement_PowerMode{
    public:

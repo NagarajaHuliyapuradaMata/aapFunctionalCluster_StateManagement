@@ -20,8 +20,8 @@
 /******************************************************************************/
 /* TYPEDEFS                                                                   */
 /******************************************************************************/
-typedef unsigned char Future;
-typedef unsigned char FunctionGroupState;
+typedef uint8 Future;
+typedef uint8 FunctionGroupState;
 
 class interface_StateManagement_StateClient{
    public:
